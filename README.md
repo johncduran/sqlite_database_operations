@@ -2,11 +2,11 @@
 HHA 504 Assignment 3
 
 
-#Dataset info:
+# Dataset info:
 df1 is a dataset from Stony Brook Hospital found here https://www.cdmpricing.com/952453295c1ee89ee3ba06e6e42496e5/shoppable-services
 df2 is a dataset from NewYork-Presbyterian found here https://www.nyp.org/patients-visitors/paying-for-care/hospital-price-transparency/standard-charges
 
-#Installing and importing
+# Installing and importing
 First you would need to install these packages
 ! pip install https://github.com/pandas-profiling/pandas-profiling/archive/master.zip
 import pandas as pd
@@ -22,7 +22,7 @@ df1 = pd.read_csv('https://raw.githubusercontent.com/johncduran/sqlite_database_
 df2 = pd.read_csv('https://raw.githubusercontent.com/johncduran/sqlite_database_operations/main/datasets/133957095_NewYorkPresbyterianHospital_standardcharges.csv')
 df2
 
-##1. Data Exploration and Analysis:
+## 1. Data Exploration and Analysis:
 I used the following functions to do analysis on both datasets:
 
 .describe()
@@ -38,7 +38,7 @@ outliers
 
 .value_counts()
 
-##2. SQLite Database Operations:
+## 2. SQLite Database Operations:
 I used the following code to connect to sqlite3 and create a sql database within the notebook.
 
 conn = sqlite3.connect('health.db')
